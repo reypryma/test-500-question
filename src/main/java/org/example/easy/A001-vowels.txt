@@ -1,0 +1,11 @@
+The function countVowels computes the number of vowels in a given string.
+
+    Vowels Initialization: We create a string vowels that contains all the vowels in both lowercase and uppercase. This is because we want our vowel counting to be case-insensitive.
+
+    Counter Initialization: We start a counter count at zero to keep track of the number of vowels we encounter.
+
+    String Iteration: We iterate over each character in the input string str. In each iteration, we check whether the current character is in the vowels string using the indexOf function. If it is (i.e., indexOf does not return -1), it means the character is a vowel, so we increment the counter.
+
+    Return Result: After examining all the characters in str, we return count, which now holds the total number of vowels in str.
+
+This function operates in O(n) time, where n is the length of the input string, as it needs to inspect every character in str. The function's space complexity is O(1) since it uses a constant amount of space (to store the counter and the vowels string) regardless of the size of the input string.

@@ -1,0 +1,11 @@
+Solution Explanation:
+
+The function reverseString reverses the given string str.
+
+    StringBuilder Creation: We create a new StringBuilder object and initialize it with the string str. This operation takes O(n) time, where n is the length of the string.
+
+    Using the reverse() Method: We call the reverse() method on the StringBuilder object, which reverses the sequence of characters in the StringBuilder. This operation also takes O(n) time.
+
+    Conversion back to String: We convert the reversed StringBuilder back to a string using the toString() method and return this string. The toString() method takes O(n) time.
+
+Overall, the time complexity of the function is O(n), where n is the length of the string. The space complexity is also O(n), as a new StringBuilder object of the same size as the string is created.
