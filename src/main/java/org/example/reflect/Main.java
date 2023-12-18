@@ -42,6 +42,26 @@ public class Main {
         // your code here
     }
 
+    public static int countDigitFrequency(long number, int digit){
+        // Initialize count to 0
+        // your code here
+        int count = 0;
+
+        // Use a while loop to iterate through each digit in the number
+        // your code here
+        while(number > 0){
+            int getLast = (int) (number % 10);
+            if(getLast == digit){
+                count++;
+            }
+            number /= 10;
+        }
+
+        // Return the count
+        // your code here
+        return count;
+    }
+
 
     public static void main(String[] args) {
         nthFibonacci(12);
