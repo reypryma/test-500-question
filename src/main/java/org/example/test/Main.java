@@ -30,7 +30,7 @@ public class Main {
         return arr;
     }
 
-    public static void main(String[] args) {
+    public static void test(){
         int[] result1 = separateEvenOdd(new int[]{1, 4, 3, 2});
         System.out.println(Arrays.toString(result1)); // Output: [2, 4, 3, 1]
 
@@ -55,5 +55,29 @@ public class Main {
 
         int[] result8 = A014SeparateEvenOdd.separateEvenOdd(new int[]{});
         System.out.println(Arrays.toString(result8)); // Output: []
+    }
+
+    public static double power(double x, int n){
+        // Check for base cases
+        if(n==0){
+            return 1;
+        }
+
+        if(n>0){
+            return x * power(x, n - 1);
+        } else {
+            return 1.0 / x * power(x, n+1);
+        }
+
+        // Handle positive exponent
+
+        // Handle negative exponent
+//        return 1.0 / x * power(x, n+1);
+    }
+    public static void main(String[] args) {
+        System.out.println(power(2, 3)); // Returns 8
+        System.out.println(power(2, 0)); // Returns 1
+        System.out.println(power(2, -3)); // Returns 0.125
+        System.out.println(power(0.5, 3)); // Returns 0.125
     }
 }
