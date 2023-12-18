@@ -1,19 +1,19 @@
 package org.example.easy;
 
 public class A014SeparateEvenOdd {
-    public static int[] separateEvenOdd(int[] arr){
+    public static int[] separateEvenOdd(int[] arr) {
         int left = 0, right = arr.length - 1;
 
         while (left < right) {
-            while(arr[left] % 2 == 0 && left < right ){
+            while (arr[left] % 2 == 0 && left < right) {
                 left++;
             }
 
-            while(arr[right] % 2 != 0 && left < right ){
+            while (arr[right] % 2 != 0 && left < right) {
                 right--;
             }
 
-            if(left < right){
+            if (left < right) {
                 swap(left, right, arr);
                 /*
                 left++;
@@ -25,7 +25,7 @@ public class A014SeparateEvenOdd {
         return arr;
     }
 
-    private static void swap(int left, int right, int[] arr){
+    private static void swap(int left, int right, int[] arr) {
         int temp = arr[left];
         arr[left] = arr[right];
         arr[right] = temp;
