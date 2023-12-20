@@ -1,6 +1,7 @@
 package org.example.test;
 
 import org.example.easy.A014SeparateEvenOdd;
+import org.example.easy.A020Anagram;
 
 import java.util.Arrays;
 
@@ -59,25 +60,25 @@ public class Main {
 
     public static double power(double x, int n){
         // Check for base cases
-        if(n==0){
+//        if(n==0){
+//            return 1;
+//        }
+//
+//        if(n>0){
+//            return x * power(x, n - 1);
+//        } else {
+//            return 1.0 / x * power(x, n+1);
+//        }
+        if (n == 0)
             return 1;
-        }
-
-        if(n>0){
+        else if(n > 0)
             return x * power(x, n - 1);
-        } else {
-            return 1.0 / x * power(x, n+1);
-        }
-
-        // Handle positive exponent
-
-        // Handle negative exponent
-//        return 1.0 / x * power(x, n+1);
+        else
+            return 1 / power(x, -n);
     }
     public static void main(String[] args) {
-        System.out.println(power(2, 3)); // Returns 8
-        System.out.println(power(2, 0)); // Returns 1
-        System.out.println(power(2, -3)); // Returns 0.125
-        System.out.println(power(0.5, 3)); // Returns 0.125
+        System.out.println((A020Anagram.areAnagrams("Listen", "Silent"))); // Returns true
+        System.out.println(A020Anagram.areAnagrams("Hello", "World")); // Returns false
+        System.out.println(A020Anagram.areAnagrams("School master", "The classroom")); // Returns true
     }
 }
