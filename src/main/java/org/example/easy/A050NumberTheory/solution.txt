@@ -1,0 +1,64 @@
+Factor of Number - Number Theory
+
+Introduction: Factors are integers that can be multiplied together to produce another number. Understanding how to derive the factors of a number is a crucial skill in number theory and can be applied in various areas of computer science and mathematics. This challenge will task you with finding all the factors of a given integer.
+
+STEPS:
+
+    Create a list to store the factors.
+
+    Iterate from 1 up to the square root of the number (inclusive).
+
+    For each iteration, check if the number is divisible by the current iterator value.
+
+    If divisible, add the iterator value and its quotient (number divided by iterator) to the factors list.
+
+    Sort the factors list in ascending order.
+
+    Return the sorted list.
+
+Requirements:
+
+    Implement the function findFactors(int num).
+
+    The function should return a list of integers.
+
+    The function should be able to handle both positive and negative input numbers (although factors are always positive).
+
+    The function should handle the number zero correctly.
+
+Input:
+
+    An integer, num.
+
+Output:
+
+    A list of integers representing the factors of the input number.
+
+Examples:
+
+    findFactors(28) -> [1, 2, 4, 7, 14, 28]
+    findFactors(6) -> [1, 2, 3, 6]
+    findFactors(5) -> [1, 5]
+    findFactors(16) -> [1, 2, 4, 8, 16]
+
+Constraints:
+
+    The input number will be between −109−109 and 109109.
+
+Expected Time Complexity:
+
+    O(n)O(n
+
+    ​), where nn is the input number.
+
+Expected Auxiliary Space:
+
+    O(1)O(1), not considering the output list.
+
+Hint:
+
+    Factors always appear in pairs (except for perfect squares). For example, for the number 28, 1 and 28 are a pair, as are 2 and 14, and 4 and 7. You only need to iterate up to the square root of the number and find one factor of each pair.
+
+Note:
+
+    A positive integer nn that has exactly two distinct positive divisors, 1 and nn, is termed a prime number. If the number has more than two distinct positive divisors, it is a composite
