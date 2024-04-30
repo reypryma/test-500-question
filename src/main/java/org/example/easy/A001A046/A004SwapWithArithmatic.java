@@ -1,4 +1,4 @@
-package org.example.easy;
+package org.example.easy.A001A046;
 
 public class A004SwapWithArithmatic {
     public static int[] swapNumbers(int a, int b){

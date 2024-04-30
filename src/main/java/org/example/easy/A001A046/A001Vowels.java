@@ -1,4 +1,4 @@
-package org.example.easy;
+package org.example.easy.A001A046;
 
 public class A001Vowels {
     public static int countVowels(String str) {

@@ -1,7 +1,7 @@
 package org.example.test;
 
-import org.example.easy.A014SeparateEvenOdd;
-import org.example.easy.A020Anagram;
+import org.example.easy.A001A046.A014SeparateEvenOdd;
+import org.example.easy.A001A046.A020Anagram;
 
 import java.util.Arrays;
 

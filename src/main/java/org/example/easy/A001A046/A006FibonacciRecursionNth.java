@@ -1,4 +1,4 @@
-package org.example.easy;
+package org.example.easy.A001A046;
 
 public class A006FibonacciRecursionNth {
     public static long nthFibonacci(int n){

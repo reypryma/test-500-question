@@ -1,4 +1,4 @@
-package org.example.easy;
+package org.example.easy.A001A046;
 
 public class A040SumOfNaturalNumber {
     public static int iterativeSum(int n) {

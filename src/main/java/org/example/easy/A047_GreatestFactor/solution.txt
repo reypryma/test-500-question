@@ -1,0 +1,44 @@
+Finding the Greatest Factor - Number Operations
+
+Introduction: In this challenge, you are tasked with implementing a function named findGreatestFactor that will find the greatest factor of a given integer that is not the integer itself. By iterating through potential factors, you will determine which is the greatest.
+
+Steps:
+
+    Define a function findGreatestFactor which accepts an integer as its argument.
+
+    Initialize a variable greatestFactor with 1.
+
+    Traverse from 2 to num / 2 (both inclusive) using a loop, for each integer i:
+
+        If num is divisible by i (i.e., num % i == 0), update greatestFactor with i.
+
+    After the traversal, return greatestFactor.
+
+Requirements:
+
+    The function findGreatestFactor should be defined in the Exercise class.
+
+    The function findGreatestFactor should return an integer, representing the greatest factor of the input number that isn't the number itself.
+
+Input: An integer num.
+
+Output: An integer representing the greatest factor of the given number.
+
+Examples:
+
+    Exercise.findGreatestFactor(13); // Returns 1
+    Exercise.findGreatestFactor(100); // Returns 50
+    Exercise.findGreatestFactor(1); // Returns 1
+    Exercise.findGreatestFactor(100000); // Returns 50000
+
+Constraints:
+
+    The number num will be between 1 and 10^6.
+
+Expected Time Complexity: O(n), where n is the input number.
+
+Expected Auxiliary Space: O(1), constant space complexity is expected as we're not using extra space proportional to input size.
+
+Hint: Consider the factors of a number are always less than or equal to num / 2. You can iterate up to num / 2 and find the largest factor.
+
+Note: In the case of prime numbers, since they don't have any other factors except 1 and the number itself, the function will return 1.

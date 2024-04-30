@@ -1,4 +1,4 @@
-package org.example.easy;
+package org.example.easy.A001A046;
 
 public class A017ExponentRecursive {
     public static double power(double x, int n) {

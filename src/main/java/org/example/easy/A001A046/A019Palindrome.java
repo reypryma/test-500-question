@@ -1,4 +1,4 @@
-package org.example.easy;
+package org.example.easy.A001A046;
 
 public class A019Palindrome {
     public static boolean sample(String str){
