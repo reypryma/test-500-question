@@ -9,9 +9,9 @@ public class ExerciseA055 {
         int sum = 1; // 1 is always a divisor for any number.
 
         for (int i = 2; i <= Math.sqrt(num); i++) {
-            if (num % i == 0) {
+            if(num % i == 0){
                 sum += i;
-                if(i != num / i){
+                if (i != num / i){
                     sum += num / i;
                 }
             }
