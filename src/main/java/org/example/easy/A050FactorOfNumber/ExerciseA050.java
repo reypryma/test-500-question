@@ -1,4 +1,4 @@
-package org.example.easy.A050NumberTheory;
+package org.example.easy.A050FactorOfNumber;
 
 import java.util.ArrayList;
 import java.util.Collections;
