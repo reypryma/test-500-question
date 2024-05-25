@@ -1,0 +1,9 @@
+    Special Case for Zero: Remember that 0 is not a self-dividing number, and any number containing a 0 digit isn't either.
+
+    Modulo Operation: Use the modulo operation (%) to extract digits from the number. This will help in checking the divisibility condition for each digit.
+
+    Divisibility Check: For each digit extracted, check if the number is divisible by this digit. If not, the number isn't self-dividing.
+
+    Loop Until Zero: Continue extracting and checking digits until the number becomes 0. This ensures that you've processed all digits.
+
+    Return Value: If the loop completes without returning false, it means the number passed all divisibility checks. Return true in this case.
