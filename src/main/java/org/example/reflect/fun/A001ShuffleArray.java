@@ -22,7 +22,7 @@ public class A001ShuffleArray {
         Random random = new Random();
 
         while(current>0){
-            int chooseRandomArray = random.nextInt(current);
+            int chooseRandomArray = random.nextInt(current); // this will choose random between 0-current
             String getValueofRandomArrayAsTemp = paragraphs[chooseRandomArray];
 
             //do swap the value of array
