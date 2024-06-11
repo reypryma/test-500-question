@@ -6,6 +6,6 @@ import org.example.easy.A001A046.A006FibonacciRecursionNth;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        A006FibonacciRecursionNth.nthFibonacci(12);
+        System.out.println(A006FibonacciRecursionNth.nthFibonacci(12));
     }
 }
