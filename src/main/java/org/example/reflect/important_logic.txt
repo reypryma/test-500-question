@@ -1,2 +1,2 @@
-A050 Find factor
+A050 Find factor Math.sqrt(num)
 A062 IsPrime
