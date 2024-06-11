@@ -20,6 +20,18 @@ public class ExerciseA062 {
         return true;
     }
 
+    public static boolean isPrimeSQRT(int num){
+        if(num <= 1) {
+            return false;
+        }
+        for(int i = 2; i <= Math.sqrt(num); i++){
+            if(num % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public static void main(String[] args) {
         // Test your function with sample inputs
         System.out.println(isPrime(2));
