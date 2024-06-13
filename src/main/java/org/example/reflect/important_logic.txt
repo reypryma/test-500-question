@@ -1,2 +1,4 @@
 A050 Find factor Math.sqrt(num)
 A062 IsPrime
+
+indexOf usage
