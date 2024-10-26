@@ -1,0 +1,19 @@
+Introduction: Arrays are fundamental constructs in computer science. Extracting specific elements based on certain criteria, like even numbers, is a frequent operation in data processing. In this challenge, learners will focus on traversing arrays and applying basic mathematical operations to filter out even numbers.
+
+STEPS:
+    Check if the input array is null. If it is, throw an IllegalArgumentException.
+    Traverse the array once to count the number of even numbers.
+    Create a new array with a size equal to the number of even numbers.
+    Traverse the array again, this time adding even numbers to the new array.
+    Return the array of even numbers.
+
+Requirements:
+    Implement the function extractEvenNumbers(int[] arr).
+    The function should return an array of integers.
+    The function should throw an IllegalArgumentException if the input array is null.
+
+Input:
+    An array of integers, arr[] arr[].
+
+Output:
+    An array of integers representing the even numbers extracted from the input array.
