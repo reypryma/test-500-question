@@ -1,0 +1,31 @@
+Standard Deviation - Statistical Operations
+
+Introduction: The standard deviation is a measure of the amount of variation or dispersion of a set of values. A low standard deviation indicates that the values tend to be close to the mean, while a high standard deviation indicates that the values are spread out over a wider range.
+
+STEPS:
+
+    Calculate the mean (average) of the dataset.
+
+    For each data point, find the square of its distance to the mean.
+
+    Sum up all the squared results from step 2.
+
+    Divide this sum by the number of data points to get the variance.
+
+    The standard deviation is the square root of the variance.
+
+Requirements:
+
+    Implement the function findStandardDeviation(int[] data).
+
+    The function should return a double.
+
+    The function should throw an IllegalArgumentException if the dataset is empty or null.
+
+Input:
+
+    An array of integers, data[]data[].
+
+Output:
+
+    A double representing the standard deviation of the dataset.

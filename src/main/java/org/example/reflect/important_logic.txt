@@ -1,4 +1,7 @@
+A006 Fibonacci
 A050 Find factor Math.sqrt(num)
 A062 IsPrime
+A065 LCM
+
 
 indexOf usage
