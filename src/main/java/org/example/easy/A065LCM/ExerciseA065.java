@@ -1,4 +1,4 @@
-package org.example.easy.ExerciseA065LCM;
+package org.example.easy.A065LCM;
 
 public class ExerciseA065 {
     public static int lcm(int a, int b) {

@@ -1,4 +1,4 @@
-package org.example.easy.ExerciseA070PrimeBetweenInterval;
+package org.example.easy.A070PrimeBetweenInterval;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -33,7 +33,8 @@ public class ExerciseA064 {
         // Iter 3 gcd(14, 0)
 
         System.out.println(gcd(15, 5));
-        System.out.println(gcdLinear(15, 5));
+        System.out.println(gcd(177, 15));
+        System.out.println(gcdLinear(5, 15));
         System.out.println(gcd(17, 19));
         System.out.println(gcdLinear(17, 19));
     }
