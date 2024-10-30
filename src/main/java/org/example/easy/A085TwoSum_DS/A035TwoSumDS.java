@@ -14,7 +14,9 @@ public class A035TwoSumDS {
 
         System.out.println(twoSum.find(4));
         System.out.println(twoSum.find(7));
+
     }
+
 }
 
 class TwoSum {
