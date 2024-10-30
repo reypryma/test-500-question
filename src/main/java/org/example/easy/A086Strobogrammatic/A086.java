@@ -5,7 +5,7 @@ public class A086 {
     public static boolean isStrobogrammatic(String num) {
         int left = 0, right = num.length() - 1;
 
-        while (left <= right) {
+        while (left < right) { // <=
             if (!isPair(num.charAt(left), num.charAt(right))) {
                 return false;
             }
@@ -28,5 +28,6 @@ public class A086 {
         System.out.println(isStrobogrammatic("69"));         // -> true
         System.out.println(isStrobogrammatic("818"));
         System.out.println(isStrobogrammatic("962"));
+        System.out.println(isStrobogrammatic("889688"));
     }
 }
