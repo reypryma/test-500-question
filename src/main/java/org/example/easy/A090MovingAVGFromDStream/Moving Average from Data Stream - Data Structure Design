@@ -1,0 +1,53 @@
+Moving Average from Data Stream - Data Structure Design
+
+Introduction: A moving average, commonly used in statistics and time-series data analysis,
+calculates the average of the most recent data points in a given window size.
+In this challenge, you'll design a data structure that efficiently calculates
+the moving average of every new element added from a data stream.
+
+STEPS:
+
+    Initialize a queue and a variable to keep track of the sum of the elements in the
+    current window.
+
+    When a new element is added:
+        Add the element to the queue.
+        Subtract the first element from the sum if the queue size exceeds the window size.
+        Calculate the average based on the current sum and the number of elements in the queue.
+    Return the calculated average.
+
+Requirements:
+    Implement the constructor Exercise(int size), where size is the window size for the moving
+    average.
+    Implement the method next(int val), which returns the moving average after adding the
+    new element val.
+
+Input:
+    A series of integers from the data stream.
+
+Output:
+    A double representing the moving average after each
+     new integer is added.
+
+Examples:
+    m = new Exercise(3);
+    m.next(1) -> 1.0
+    m.next(10) -> 5.5
+    m.next(3) -> 4.66667
+    m.next(5) -> 6.0
+
+Constraints:
+    The window size will be between 1 and 10,000.
+    The added integers will be between -10^6 and 10^6.
+
+Expected Time Complexity:
+    O(1)O(1) for each call to the next method.
+
+Expected Auxiliary Space:
+    O(size)O(size), where size is the window size for the moving average.
+
+Hint:
+    Consider using a queue to keep track of the current elements in the window. This will allow for easy addition and removal of elements.
+
+Note:
+    The returned average should be accurate up to five decimal places.
