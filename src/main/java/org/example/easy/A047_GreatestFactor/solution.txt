@@ -16,7 +16,7 @@ Steps:
 
 Requirements:
 
-    The function findGreatestFactor should be defined in the Exercise class.
+    The function findGreatestFactor should be defined in the org.example.easy.A089BinarySearchOps.Exercise class.
 
     The function findGreatestFactor should return an integer, representing the greatest factor of the input number that isn't the number itself.
 
@@ -26,10 +26,10 @@ Output: An integer representing the greatest factor of the given number.
 
 Examples:
 
-    Exercise.findGreatestFactor(13); // Returns 1
-    Exercise.findGreatestFactor(100); // Returns 50
-    Exercise.findGreatestFactor(1); // Returns 1
-    Exercise.findGreatestFactor(100000); // Returns 50000
+    org.example.easy.A089BinarySearchOps.Exercise.findGreatestFactor(13); // Returns 1
+    org.example.easy.A089BinarySearchOps.Exercise.findGreatestFactor(100); // Returns 50
+    org.example.easy.A089BinarySearchOps.Exercise.findGreatestFactor(1); // Returns 1
+    org.example.easy.A089BinarySearchOps.Exercise.findGreatestFactor(100000); // Returns 50000
 
 Constraints:
 
