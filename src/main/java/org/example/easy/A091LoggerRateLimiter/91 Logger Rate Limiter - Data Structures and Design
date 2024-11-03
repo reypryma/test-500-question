@@ -1,0 +1,37 @@
+Logger Rate Limiter - Data Structures and Design
+
+Introduction: Rate limiting is a crucial component
+    in various applications,
+    especially for logging systems,
+    to prevent flooding with repetitive messages.
+    In this challenge, learners will design a logger
+    system that could receive a message
+    with a timestamp.
+
+    The system should return true if the same
+    message should not have been printed in
+    the last 10 seconds, otherwise, return false.
+
+STEPS:
+    Initialize a map or dictionary to keep track of messages and their last printed timestamps.
+    When a new message arrives with a timestamp:
+        Check if the message exists in the map.
+        If it does not, or if the difference between the current timestamp and
+        the last logged timestamp for the message is 10 or more,
+        update the timestamp in the map and return true.
+        Otherwise, return false.
+
+Requirements:
+    Implement the Logger class.
+    The class should have a method
+        shouldPrintMessage(int timestamp,
+        String message) that returns a boolean.
+
+Input:
+    An integer timestamp (1 <= timestamp <= 10^9).
+    A string message (1 <= message.length <= 30)
+        containing only lowercase English letters.
+
+Output:
+    A boolean indicating whether the message
+    should be printed at the given timestamp.

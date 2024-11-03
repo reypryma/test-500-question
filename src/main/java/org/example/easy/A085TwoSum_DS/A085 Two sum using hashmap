@@ -1,0 +1,56 @@
+STEPS:
+
+    Initialize a data structure to store the numbers.
+
+    Implement a method to add numbers to this data structure.
+
+    Implement a method that checks if there exists a pair of numbers that sum up to a target value.
+
+Requirements:
+
+    Design the TwoSum class.
+
+    Implement the add(int number) method to add an integer to the data structure.
+
+    Implement the find(int value) method to check if there's a pair of numbers that add up to the target value.
+
+    Ensure that the find method works efficiently.
+
+Input:
+
+    Methods will receive integers as arguments.
+
+Output:
+
+    The find method should return a boolean.
+
+Examples:
+
+    TwoSum twoSum = new TwoSum();
+    twoSum.add(1);
+    twoSum.add(3);
+    twoSum.add(5);
+    twoSum.find(4);  // true
+    twoSum.find(7);  // false
+
+Constraints:
+
+    All input numbers will be between −106−106 and 106106.
+
+    The find method will be called multiple times.
+
+Expected Time Complexity:
+
+    O(n)O(n) for the find method, where nn is the number of elements added so far.
+
+Expected Auxiliary Space:
+
+    O(n)O(n) for storing the numbers.
+
+Hint:
+
+    Consider using a hashmap to optimize the search operation.
+
+Note:
+
+    Ensure that you handle duplicates correctly. For example, if the data structure has two instances of the number 3, it should return true for a target of 6.
