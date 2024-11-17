@@ -1,0 +1,43 @@
+Requirements:
+
+    Write an SQL query to calculate the acceptance rate.
+
+    The result should be a single decimal number rounded to two decimal places.
+
+    Handle edge cases where there might be no friend requests or no acceptances.
+
+Input:
+
+    Two tables: friend_request and request_accepted with columns sender_id, send_to_id, request_date, requester_id, accepter_id, and accept_date respectively.
+
+Output:
+
+    A single decimal number representing the overall acceptance rate.
+
+Examples: If there are 10 friend requests and 8 of them are accepted, the acceptance rate would be 0.80.
+
+Constraints:
+
+    The sender_id and send_to_id in the friend_request table will be distinct.
+
+    The requester_id and accepter_id in the request_accepted table will be distinct.
+
+    All IDs are positive integers.
+
+Expected Time Complexity:
+
+    Depends on the database engine and the amount of data but ideally should run in reasonable time for up to 1 million rows.
+
+Expected Auxiliary Space:
+
+    No additional space is required other than the space for the SQL query itself.
+
+Hint:
+
+    Consider using a LEFT JOIN operation to merge the two tables based on the IDs.
+
+    The IFNULL SQL function can help handle cases where there are no acceptances.
+
+Note:
+
+    Ensure to always round the result to two decimal places for consistency.
