@@ -1,0 +1,79 @@
+Consecutive Available Seats - Database Operations
+
+Introduction: In a reservation system,
+managing seating arrangements efficiently can lead to a better customer experience.
+This challenge revolves around querying a database to find consecutive available seats,
+which is often a requirement for groups or families attending an event together.
+
+STEPS:
+
+    Define a Seats table with columns for seat_id and available.
+
+    Use a SQL JOIN operation to combine rows from the same table.
+
+    Use a WHERE clause to filter out seats that are not available.
+
+    Ensure that the difference in seat_id between two rows is 1, indicating consecutive seats.
+
+    Order the results by seat_id for clarity.
+
+Requirements:
+
+    Write a SQL query.
+
+    The query should return the seat_id of
+    the first seat in each set of consecutive available seats.
+
+Input:
+
+    A database table Seats with columns:
+
+        seat_id: An integer representing the seat number.
+
+        available: A boolean indicating whether the seat is available.
+
+Output:
+
+    A list of seat_id values for the first seat in each set of consecutive available seats.
+
+Examples: For a table like:
+
+    seat_id | available
+    --------|----------
+       1    |   true
+       2    |   true
+       3    |   false
+       4    |   true
+       5    |   true
+
+The query should return:
+
+    seat_id
+    -------
+       1
+       4
+
+Constraints:
+
+    The Seats table will have a maximum of 106106 rows.
+
+    The seat_id is unique and sequential.
+
+Expected Time Complexity:
+
+    Depending on the database system and data size,
+    the time complexity can vary.
+    Aim for a solution that performs efficiently on the given data size.
+
+Expected Auxiliary Space:
+
+    O(1)O(1).
+
+Hint:
+
+    Consider using a self JOIN operation on the Seats table to compare rows.
+
+Note:
+
+    While writing the SQL query, ensure you handle edge cases like the first and last seats in the table.
+
