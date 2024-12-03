@@ -23,9 +23,9 @@ object A095ShortestInLineKT {
     @JvmStatic
     fun main(args: Array<String>) {
         // Test your function with sample inputs
-        shortestDistance(intArrayOf(3, 8, 4, 5, 2))
-        shortestDistance(intArrayOf(10, 12, 15))
-        shortestDistance(intArrayOf(7, 7))
+        println(shortestDistance(intArrayOf(3, 8, 4, 5, 2)))
+        println(shortestDistance(intArrayOf(10, 12, 15)))
+        println(shortestDistance(intArrayOf(7, 7)))
         shortestDistance(intArrayOf(15, 18, 12))
     }
 }
