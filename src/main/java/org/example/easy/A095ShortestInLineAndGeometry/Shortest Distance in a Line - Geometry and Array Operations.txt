@@ -1,0 +1,52 @@
+Introduction: In geometry, finding the distance between
+points on a line is a fundamental concept.
+ this challenge, learners will be tasked with
+ finding the shortest distance between any two points
+ in a given set of points, all located on the same line.
+
+STEPS:
+    Check for edge cases: ensure the array isn't null and contains at
+    least two points.
+    Initialize the shortest distance to the largest possible integer value.
+    Traverse through the array, comparing each point to every other point.
+    Calculate the absolute difference between each pair of points.
+    Update the shortest distance if a smaller distance is found.
+    After all comparisons are made, return the shortest distance.
+
+Requirements:
+    Implement the function shortestDistance(int[] points).
+    The function should return an integer.
+    Throw an IllegalArgumentException
+    if the array is null or contains fewer than two points.
+
+Input:
+    An array of integers, points[]points[], representing the points on a line.
+
+Output:
+    An integer representing the shortest distance
+    between any two points in the array.
+
+Examples:
+    shortestDistance([3, 8, 4, 5, 2]) -> 1
+    shortestDistance([10, 12, 15]) -> 2
+    shortestDistance([7, 7]) -> 0
+    shortestDistance([15, 18, 12]) -> 3
+
+Constraints:
+    The array will have a length of at least 2 and at most 105105.
+    Each integer in the array will be between −109−109 and 109109.
+
+Expected Time Complexity:
+    O(n2)O(n2), where nn is the number of points.
+    This is because for every point, we are comparing it with every other point.
+
+Expected Auxiliary Space:
+    O(1)O(1).
+
+Hint:
+    Nested loops can be used to compare each point to every other point.
+
+Note:
+    While there are more efficient methods to solve this using sorting,
+    this challenge aims to test
+    basic array traversal and comparison skills.
