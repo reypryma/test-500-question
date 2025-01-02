@@ -1,0 +1,66 @@
+Introduction: A confusing number is a number that,
+when rotated 180 degrees, becomes a different number
+with each of its digits valid. Note that numbers 0, 1,
+and 8 rotate to themselves; 6 and 9 rotate to each other.
+A number with any other digit is not a confusing number as
+those digits don't have valid rotations.
+
+This challenge requires learners to identify if a given number
+is confusing or not.
+
+STEPS:
+
+    Create a mapping of numbers to their rotations.
+
+    Check each digit of the number to ensure it has a valid rotation.
+
+    Rotate the number and compare it to the original.
+
+    If the rotated number is different from the original,
+    then it's a confusing number.
+
+Requirements:
+
+    Implement the function isConfusingNumber(int num).
+
+    The function should return a boolean.
+
+    A valid confusing number will have digits
+    that only rotate to valid numbers and
+    the rotated number should be different from the original.
+
+Input:
+
+    An integer, num.
+
+Output:
+
+    A boolean value indicating whether the number is confusing
+    or not.
+
+Examples:
+
+    isConfusingNumber(6) -> true
+    isConfusingNumber(89) -> true
+    isConfusingNumber(11) -> false
+    isConfusingNumber(25) -> false
+
+Constraints:
+
+    The input number will be non-negative and less than 109109.
+
+Expected Time Complexity:
+
+    O(log⁡n)O(logn), where nn is the input number.
+
+Expected Auxiliary Space:
+    O(1)O(1).
+
+Hint:
+    Remember that only the digits 0, 1, 6, 8, and 9 have
+    valid rotations.
+    Ensure that the number only contains these digits.
+
+Note:
+    A confusing number is not just about having valid digits,
+    but its rotation should also produce a different number.

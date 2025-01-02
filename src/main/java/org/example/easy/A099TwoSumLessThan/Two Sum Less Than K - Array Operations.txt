@@ -1,0 +1,65 @@
+Two Sum Less Than K - Array Operations
+
+Introduction: Given an array of integers and a target integer KK,
+the challenge is to find a pair of integers in the array whose sum is maximized,
+but is still less than KK.
+
+This problem tests the learner's ability to traverse an array efficiently
+while keeping track of multiple conditions.
+
+STEPS:
+    Initialize a variable, maxSum,
+    to store the maximum sum found that is still less than KK.
+
+    Traverse through the array using nested loops
+    to evaluate all possible pairs of numbers.
+
+    For each pair, calculate their sum and check if it's less than KK.
+
+    Update maxSum if the current sum is greater
+    than the previous maxSum and still less than KK.
+
+    Return maxSum after all pairs have been evaluated.
+
+Requirements:
+    Implement the function twoSumLessThanK(int[] arr, int K).
+    The function should return an integer.
+    The function should return -1 if no valid pairs are found.
+
+Input:
+    An array of integers, arr[]arr[], and a target integer, KK.
+
+Output:
+    An integer representing the maximum sum of any two elements
+    in the array that's less than KK, or -1 if no such pair exists.
+
+Examples:
+
+    twoSumLessThanK([34, 23, 1, 24, 75, 33, 54, 8], 60) -> 58
+    twoSumLessThanK([10, 20, 30], 15) -> -1
+    twoSumLessThanK([10, 12, 15, 7, 5], 23) -> 22
+
+Constraints:
+
+    The array will have a length of at least 1 and at most 105105.
+
+    Each integer in the array will be between −109−109 and 109109.
+
+    KK will be between −109−109 and 109109.
+
+Expected Time Complexity:
+
+    O(n2)O(n2), where nn is the length of the array.
+
+Expected Auxiliary Space:
+
+    O(1)O(1).
+
+Hint:
+
+    Using a nested loop, traverse the array and evaluate all possible pairs.
+    Keep updating the maximum sum found that is less than KK.
+
+Note:
+    In cases where the array has fewer than two elements or no
+    valid pairs are found, the function should return -1.
